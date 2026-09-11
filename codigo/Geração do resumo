@@ -1,0 +1,41 @@
+INÍCIO
+
+    planejadas <- 0
+    realizadas <- 0
+    canceladas <- 0
+    totalPrevisto <- 0
+    totalEfetivo <- 0
+
+    PARA cada ação cadastrada FAÇA
+
+        totalPrevisto <- totalPrevisto +
+                         quantidade prevista
+
+        SE situação = planejada ENTÃO
+            planejadas <- planejadas + 1
+
+        SENÃO SE situação = realizada ENTÃO
+            realizadas <- realizadas + 1
+            totalEfetivo <- totalEfetivo +
+                            participantes efetivos
+
+        SENÃO SE situação = cancelada ENTÃO
+            canceladas <- canceladas + 1
+
+        FIM SE
+
+    FIM PARA
+
+    SE totalPrevisto > 0 ENTÃO
+        percentual <- (totalEfetivo / totalPrevisto) * 100
+    SENÃO
+        percentual <- 0
+    FIM SE
+
+    exibir planejadas
+    exibir realizadas
+    exibir canceladas
+    exibir total de participantes
+    exibir percentual de participação
+
+FIM
