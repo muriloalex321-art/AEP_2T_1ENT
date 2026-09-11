@@ -1,0 +1,29 @@
+INÍCIO
+
+    exibir opções:
+        1 - Pesquisar por código
+        2 - Pesquisar por escola
+        3 - Pesquisar por tema
+
+    ler opção
+    ler termo de pesquisa
+
+    encontrado <- FALSO
+
+    PARA cada ação cadastrada FAÇA
+
+        SE o campo escolhido corresponder
+        ao termo pesquisado ENTÃO
+
+            exibir dados da ação
+            encontrado <- VERDADEIRO
+
+        FIM SE
+
+    FIM PARA
+
+    SE encontrado = FALSO ENTÃO
+        informar que nenhuma ação foi encontrada
+    FIM SE
+
+FIM
