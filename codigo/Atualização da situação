@@ -1,0 +1,34 @@
+INÍCIO
+
+    solicitar código da ação
+
+    localizar ação
+
+    SE ação não for encontrada ENTÃO
+        informar registro inexistente
+        RETORNAR
+    FIM SE
+
+    exibir situação atual
+
+    solicitar nova situação
+
+    SE situação inválida ENTÃO
+        informar opção inválida
+        RETORNAR
+    FIM SE
+
+    atualizar situação
+
+    SE nova situação = REALIZADA ENTÃO
+
+        solicitar quantidade efetiva
+        validar quantidade
+
+        registrar quantidade efetiva
+
+    FIM SE
+
+    informar atualização realizada
+
+FIM
