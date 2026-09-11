@@ -1,0 +1,41 @@
+INÍCIO
+
+    verificar se existe espaço disponível
+
+    SE não houver espaço ENTÃO
+        informar limite de armazenamento
+        RETORNAR
+    FIM SE
+
+    REPITA
+        solicitar código
+        verificar se o código já está cadastrado
+    ATÉ código válido e não duplicado
+
+    solicitar escola
+    solicitar tema
+    solicitar data prevista
+    solicitar público-alvo
+    solicitar responsável
+    solicitar quantidade prevista
+
+    validar os campos obrigatórios
+
+    SE quantidade prevista < 0 ENTÃO
+        informar erro
+    FIM SE
+
+    solicitar situação inicial
+
+    REPITA
+        verificar situação
+    ATÉ situação seja planejada,
+        realizada ou cancelada
+
+    armazenar dados da ação no vetor
+
+    aumentar quantidade de registros
+
+    informar que o cadastro foi realizado
+
+FIM
